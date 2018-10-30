@@ -41,7 +41,6 @@ export class TodoListComponent implements OnChanges {
     constructor(private readonly shareService: ShareService, private readonly notificationService: NotificationService, @Inject(WINDOW) windowRef: Window,
                 private readonly changeDetectorRef: ChangeDetectorRef, private readonly activatedRoute: ActivatedRoute, private readonly router: Router) {
         this.shareUrl = windowRef.location.href;
-        console.log('foo');
     }
 
     ngOnChanges(changes: SimpleChanges) {
